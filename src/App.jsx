@@ -66,6 +66,15 @@ function App() {
             </div>
           )}
         </div>
+        <div className="thank-you-message" style={{
+          color: 'white',
+          textAlign: 'center',
+          marginTop: '2rem',
+          fontSize: '1.2rem',
+          fontStyle: 'italic'
+        }}>
+          Un agradecimiento por ser tan piola!
+        </div>
       </div>
     </div>
   )
