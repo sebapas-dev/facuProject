@@ -11,8 +11,15 @@ function App() {
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=${encodeURIComponent('https://www.youtube.com/watch?v=cAaYMTBjB68&list=PL_vGrerK7fHt9ZcGU-VWpgKYxZ1I360tp&index=1')}`
 
   const handleRevealQR = () => {
-    setShowQR(true)
-    setHello("Hola FuckYou!")
+    const password = prompt("Ingresa el nombre de la editorial para ver el QR:")
+    
+    if (password === "minotauro") {
+      setShowQR(true)
+      setHello("Hola FuckYou!")
+    } else {
+      // Si la contraseña es incorrecta, recargar la página
+      window.location.reload()
+    }
   }
 
   const handleImageLoad = () => {
