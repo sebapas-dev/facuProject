@@ -172,7 +172,7 @@ function App() {
               marginBottom: '1rem',
               fontSize: '1.5rem'
             }}>
-              ¡LA CLAVE ESTA COMO EL ORTO PERO ACA TENES UN PERRO !
+              ¡LA CLAVE ESTA COMO EL ORTO PERO ACA TENES UN PERRITO !
             </h2>
             
             {memeLoading ? (
