@@ -70,6 +70,7 @@ function App() {
                 className={`qr-code ${imageLoaded ? 'loaded' : ''}`}
                 onLoad={handleImageLoad}
               />
+              
             </div>
           )}
         </div>
@@ -82,6 +83,17 @@ function App() {
         }}>
           Un agradecimiento por ser tan piola!
         </div>
+        {showQR && (
+                <div style={{
+                  color: 'white',
+                  textAlign: 'center',
+                  marginTop: '1rem',
+                  fontSize: '1rem',
+                  fontStyle: 'italic'
+                }}>
+                  -una playlist a medida curada por mi-
+                </div>
+              )}
       </div>
     </div>
   )
